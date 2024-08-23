@@ -47,8 +47,12 @@ print('Exponent : ', a ** b)
 print("/// Strings operation")
 
 msg='welcome to it\'s Python 101: Strings'
-print(msg, mgs) # welcome to it's Python 101: Strings welcome to it's Python 101: Strings
+print(msg, msg) # welcome to it's Python 101: Strings welcome to it's Python 101: Strings
 print(msg.upper()) # WELCOME TO IT'S PYTHON 101: STRINGS
 print(msg.lower()) # welcome to it's python 101: strings
 print(msg.capitalize()) # Welcome to it's python 101: strings
 print(msg.title()) # Welcome To It'S Python 101: Strings
+
+word = "Python101 is good"
+print(len(word)) # 17
+print("word count", word.count('o')) # word count 3
