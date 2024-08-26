@@ -222,7 +222,46 @@ print(friends_set.intersection(my_friends_set)) # names that exist in both -- {'
 print(friends_set.difference(my_friends_set)) # names that exist in friends_set but not in my_friends_set -- {'John', 'Michael', 'Terry'}
 print(friends_set.difference(my_friends_set)) # all names in both set without duplicates -- {'John', 'Michael', 'Terry', 'Eric', 'Graham', 'Reg', 'Loretta', 'Colin'}
 
-#Sets - blazingly fast unordered Lists 
+#Sets - Exercise
+
+friends = {'John','Michael','Terry','Eric','Graham'}
+my_friends = {'Reg','Loretta','Colin','John','Graham'}
+cars =['900','420','V70','911','996','V90','911','911','S','328','900']
+
+#1. Check if ‘Eric’ and ‘John’ exist in friends
+print('Eric' in friends and 'John' in friends) # True
+
+#2. combine or add the two sets
+
+print(friends.union(my_friends)) # {'John', 'Michael', 'Terry', 'Eric', 'Graham', 'Reg', 'Loretta', 'Colin'}
+print(friends | my_friends)      # {'John', 'Michael', 'Terry', 'Eric', 'Graham', 'Reg', 'Loretta', 'Colin'}
+
+#3. Find names that are in both sets
+print(friends.intersection(my_friends)) # {'John', 'Graham'}
+print(friends & my_friends)             # {'John', 'Graham'}
+
+#4. find names that are ONLY in friends
+print(friends.difference(my_friends))   # {'Michael', 'Terry', 'Eric'}
+print(friends - my_friends)             # {'Michael', 'Terry', 'Eric'}
+
+#5. find names that are ONLY in my_friends
+print(my_friends.difference(friends))   # {'Reg', 'Loretta', 'Colin'}
+print(my_friends - friends)             # {'Reg', 'Loretta', 'Colin'}
+
+#6. Show only the names who only appear in one of the lists
+print(my_friends.symmetric_difference(friends)) # {'Reg', 'Loretta', 'Colin', 'Michael', 'Terry', 'Eric'}
+print(my_friends ^ friends)                     # {'Reg', 'Loretta', 'Colin', 'Michael', 'Terry', 'Eric'}
+
+#7. Create a new cars-list without duplicates
+cars_no_dupl_set = set(cars)
+print(cars_no_dupl_set)         # {'900', '420', 'V70', '911', '996', 'V90', 'S', '328'}
+
+#8. Convert the cars-set back to a list
+cars_no_dupl_list = list(set(cars)) 
+print(cars_no_dupl_list)        # ['900', '420', 'V70', '911', '996', 'V90', 'S', '328']
+
+
+
 
 
 
