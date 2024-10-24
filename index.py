@@ -259,7 +259,7 @@ print(cars_no_dupl_set)         # {'900', '420', 'V70', '911', '996', 'V90', 'S'
 #8. Convert the cars-set back to a list
 cars_no_dupl_list = list(set(cars)) 
 print(cars_no_dupl_list)        # ['900', '420', 'V70', '911', '996', 'V90', 'S', '328']
-l
+
 
 
 
