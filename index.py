@@ -260,10 +260,108 @@ print(cars_no_dupl_set)         # {'900', '420', 'V70', '911', '996', 'V90', 'S'
 cars_no_dupl_list = list(set(cars)) 
 print(cars_no_dupl_list)        # ['900', '420', 'V70', '911', '996', 'V90', 'S', '328']
 
+print('o' not in 'John') # True
+
+a1 = [3,7,42]
+b1 = a1
+print(a1 == b1)  # True
+print(a1 is b1)  # True
+print(id(a1), id(b1)) # 2 2
 
 
+aNew = [3,7,42]
+bNew = [3,7,42]
+print(aNew == bNew) # True
+print(aNew is bNew) # False
+print(id(aNew), id(bNew)) # 2 3
+# equal in value but different in identity and memory
 
 
+a=7
+b=3
+print('a == b is', a == b) # False
+print('a != b is', a != b) # True
+print('a > b is', a > b) # True
+print('a < b is', a < b) # False
+print('a >= b is', a >= b) # True
+print('a <= b is', a <= b) # False
+print('o in John is ','o' in 'John') #membership #True
+print('o in John is ','o' not in 'John') #non membership #False
+print('John is John ','John' is 'John') #identity  #True
+print('John is not John is ','John' is not 'John') # negative identity #False
+
+
+print(bool([])) # False
+print(bool([1,2])) # True
+print(bool("Parrot")) # True
+print(bool(" ")) # True
+print(bool("")) # False
+print(bool(1)) # True
+print(bool(0)) # False
+
+print(int(True)) # 1
+print(int(False)) # 0
+print(42 + False) # 42
+print(42 + True) # 43
+
+# Conditionals
+
+is_raining = True
+is_cold = True
+print("Good Morning!")
+if is_raining or is_cold: 
+    print("Bring umbrella or jacket or both!") # if one of them is true
+else:
+    print("Umbrella optional!") # if both are false
+    
+# Conditionals
+
+is_raining = False
+is_cold = False
+print("Good Morning!")
+if is_raining and is_cold: 
+    print("Bring umbrella or jacket or both!") # if both are true
+else:
+    print("Umbrella optional!") # if one or both is false
+    
+   
+is_raining = False
+is_cold = False
+print("Good Morning!")
+if is_raining and is_cold: 
+    print("Bring umbrella and jacket!") # if both are true
+elif is_raining and not(is_cold):
+    print("Bring umbrella!") # if is_raining is true and is_cold is false
+elif not(is_raining) and is_cold:
+    print("Bring jacket!") # if is_raining is false and is_cold is true
+else:
+    print("Shirt is fine!") # if both are false
+    
+
+mode = input('Enter math operation(+,-,*,/) or f for Celsius to Fahrenheit conversion: ')
+num1 = float(input('Enter first number: '))
+if mode.lower() == 'f':
+    print(f'{num1} Celsius is equivalent to {(num1*9/5)+32 } fahrenheit')
+else:
+    num2 = float(input('Enter second number: '))
+
+    if mode == '+':
+        print(f'Answer is: {num1 + num2}')
+    elif mode == '-': 
+        # if and elif is better than multiple ifs bcos it will break after seeing the applicable case
+        print(f'Answer is: {num1 - num2}')
+    elif mode == '*':
+        print(f'Answer is: {num1 * num2}')
+    elif mode == '/':
+        print(f'Answer is: {num1 / num2}')
+    else:
+        print('Input error!')
+# Create a calculator which handles +,-,*,/ and outputs answer based on the mode/ operator used
+# Hint: use 3 separate inputs 
+# Bonus: Extend functionality with extra mode so it also does celsius to fahrenheit conversion
+# formula is: temp in C*9/5 + 32 = temp in f
+
+    
 
 
 
