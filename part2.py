@@ -97,6 +97,34 @@ for friend in friends:
 
 print("For Loop done!")
 
-friends = ['John','Terry','Eric','Michael','George']
+
 for index in range(len(friends)):
    print(friends[index])
+
+for friend in friends:
+    if friend == 'Eric':
+        print('Found' + friend + '!')
+        break
+    print(friend)   
+
+#John
+#Terry
+#FoundEric!
+
+friends = ['John','Terry','Eric']
+for friend in friends:
+    for number in [1,2,3]:
+        print(friend, number)
+        
+#John 1
+#John 2
+#John 3
+
+#Terry 1
+#Terry 2
+#Terry 3
+
+#Eric 1
+#Eric 2
+#Eric 3
+
