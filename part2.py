@@ -128,3 +128,7 @@ for friend in friends:
 #Eric 2
 #Eric 3
 
+names = ['john ClEEse','Eric IDLE','michael']
+names1 = ['graHam chapman', 'TERRY', 'terry jones']
+msg = 'You are invited to the party on saturday.'
+names.extend(names1)
